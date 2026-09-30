@@ -1,0 +1,32 @@
+RelateAnything
+Copyright (C) 2026 Maëlic Neau
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, version 3 only (AGPL-3.0-only). It is distributed WITHOUT
+ANY WARRANTY; see the LICENSE file for details.
+
+Model weights, the RA-4M annotations and the demo detectors carry their own
+terms; see THIRD_PARTY_NOTICES.md.
+
+Additional terms under section 7 of the GNU AGPL v3
+----------------------------------------------------
+
+These terms apply to all material in this repository and to works based on it.
+
+1. Attribution (section 7(b)). You must preserve the author attribution
+   "Based on RelateAnything by Maëlic Neau", with a link to
+   https://github.com/Maelic/RelateAnything, in the Appropriate Legal Notices
+   of any interactive user interface of a work that contains this material,
+   including web, desktop and API-backed demos.
+
+2. Names and trademarks (section 7(e)). This license grants no right to use
+   the name "RelateAnything" or the author's name to promote or brand a
+   derived product or service, except as required by term 1.
+
+Commercial licensing
+--------------------
+
+To use this software without the obligations of the AGPL, a separate
+commercial license is available from the author. Contact:
+https://github.com/Maelic/RelateAnything/issues

@@ -1,0 +1,11 @@
+# Runtime for relate_video.py - no torch, no ultralytics.
+# Intel Macs are pinned to the last releases that still ship x86_64 wheels;
+# Apple Silicon / Linux get current ones.
+numpy>=1.26
+opencv-python>=4.10
+Pillow>=10
+imageio-ffmpeg>=0.5
+onnxruntime==1.23.2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+onnxruntime>=1.23 ; sys_platform != "darwin" or platform_machine != "x86_64"
+openvino==2025.4.1 ; sys_platform == "darwin" and platform_machine == "x86_64"
+openvino>=2025.4 ; sys_platform != "darwin" or platform_machine != "x86_64"

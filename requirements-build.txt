@@ -1,0 +1,15 @@
+# ONE-TIME build tools (setup_mac.sh installs these in a throwaway venv,
+# .build-env/, and deletes it afterwards): rebuilding the object detector and
+# adding new relation phrases. ultralytics is AGPL-3.0; see THIRD_PARTY_NOTICES.md.
+# PyTorch stopped shipping Intel-Mac wheels after 2.2.2, which needs numpy<2.
+torch==2.2.2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+torchvision==0.17.2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+numpy<2 ; sys_platform == "darwin" and platform_machine == "x86_64"
+onnx>=1.16,<1.18 ; sys_platform == "darwin" and platform_machine == "x86_64"
+transformers>=4.40,<4.47 ; sys_platform == "darwin" and platform_machine == "x86_64"
+torch>=2.2 ; sys_platform != "darwin" or platform_machine != "x86_64"
+onnx>=1.16 ; sys_platform != "darwin" or platform_machine != "x86_64"
+transformers>=4.40 ; sys_platform != "darwin" or platform_machine != "x86_64"
+ultralytics~=8.4
+onnxslim
+clip @ git+https://github.com/ultralytics/CLIP.git

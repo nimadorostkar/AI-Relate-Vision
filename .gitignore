@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.venv/
+venv/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Weights, caches and data: downloaded or built, never committed
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.bin
+*.xml
+*_deploy.pt
+checkpoints/
+datasets/
+runs/
+# Benchmark measurements are local artifacts; commit only their Markdown reports.
+docs/benchmarks/*.json
+docs/benchmarks/*.json.gz
+third_party/
+.hf_cache/
+wandb/
+mobileclip*.ts
+
+# deploy/dist: track only the small source-of-truth files per bundle. Graphs,
+# weights and the locally rebuilt detector (AGPL upstream) stay out.
+deploy/dist/*
+!deploy/dist/README.md
+!deploy/dist/requirements.txt
+!deploy/dist/relsgg-*/
+deploy/dist/relsgg-*/*
+!deploy/dist/relsgg-*/relateanything.json
+!deploy/dist/relsgg-*/predicate_bank.npz
+!deploy/dist/relsgg-*/thresholds.json
+!deploy/dist/relsgg-*/calibration.json
+!deploy/dist/relsgg-*/README.md
+
+# Rendered by deploy/make_reel.py from the tracked inputs beside them
+# (images/, credits.json, shots.json). The README ships assets/hero.gif and the
+# project page ships the video, so the copies under assets/reel/ are build
+# output, not sources.
+assets/reel/reel.mp4
+assets/reel/hero.gif
+assets/reel/poster.jpg
+
+# The report PDF: read it on arXiv rather than carrying 12 MB per revision here
+main.pdf
+
+# AI-Relate-Vision (local laptop app)
+.build-env/
+videos/*
+!videos/.gitkeep
+outputs/*
+!outputs/.gitkeep
+frame_*.jpg
